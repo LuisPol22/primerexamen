@@ -7,7 +7,7 @@ using namespace std;
 main(){
 	char continuar;
 	string cod,nombres,apellidos,curso;
-	int n1,n2,n3,n4;
+	int n1,n2,n3,n4,pr;
 
 	fflush(stdin);
 	cout<<"INGRESAR CODIGO DE ESTUDIANTE: ";
@@ -26,21 +26,14 @@ main(){
 	cin>>n3;
 	cout<<"INGRESE LA CUARTA NOTA: ";
 	cin>>n4;
-	
-	cout<<"Desea Agregar otro Estudiante (s/n):";
-	cin>>continuar;
-	if(continuar=='s' || continuar=='S');{
-		
-	fflush(stdin);
-	
-	};
-
+	pr=((n1+n2+n3+n4)/4);
+	cout<<"PROMEDIO  "<<pr<<endl;
 
 	
 
 	//instancia de un objeto
 	
-	promedio obj = promedio(cod,nombres,apellidos,curso,n1,n2,n3,n4);
+	promedio obj = promedio(cod,nombres,apellidos,curso,pr);
 	obj.mostrar();
 	
 		
